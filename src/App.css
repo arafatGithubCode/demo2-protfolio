@@ -1,3 +1,5 @@
+/* Global CSS */
+
 *,
 *::after,
 *::before {
@@ -7,12 +9,12 @@
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
 }
-
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -21,4 +23,182 @@ body {
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
+}
+.btn {
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.btn-github {
+  color: var(--white);
+  background-color: var(--github);
+  border: var(--github);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
+  gap: 1rem;
+}
+
+.btn-github:hover {
+  color: var(--github);
+  background-color: var(--white);
+}
+
+/* heading styler start */
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* paragraph text large, medium & small */
+.text-lg {
+  color: var(--darkblue);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+}
+.text-md {
+  color: var(--darkblue);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text-sm {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+/* navbar style start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+.nav_items > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav_items > ul > li > a {
+  text-decoration: none;
+}
+
+.nav_items .navbar--content {
+  cursor: pointer;
+  color: var(--darkblue);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.nav_items .navbar--active-content {
+  color: var(--primary);
+}
+
+/* hero section styler start */
+.hero--section {
+  background-color: var(--bg-shade);
+}
+.container {
+  width: 85%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_section_img > img {
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_section_content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1.5rem;
+}
+.hero_section_content > .section_title {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 5rem;
+}
+.hero_section_content > .hero_section_title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.hero_section_content > .hero_section_desc {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--darkblue);
+  line-height: 36px;
 }
