@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
-      <div className="container">
+      <div className="container her--wrapper">
         <div className="hero_section_content">
           <p className="section_title">Hey, I&apos;m Arafat</p>
           <h1 className="hero_section_title">

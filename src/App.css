@@ -168,6 +168,9 @@ h3 {
   width: 85%;
   min-height: 100vh;
   margin: 0 auto;
+}
+
+.her--wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
@@ -201,4 +204,48 @@ h3 {
   font-size: 1.5rem;
   color: var(--darkblue);
   line-height: 36px;
+}
+
+/* skills section styler start */
+.section_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #282938;
+  padding: 7rem 0 1rem;
+}
+
+.section_skill_title {
+  padding-bottom: 4rem;
+}
+
+.skill_img_box {
+  width: 5rem;
+  padding: 10px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1), -2px -1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.skill_img {
+  width: 100%;
+  border-radius: 5px;
+}
+.skill_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.skill_item {
+  max-width: 250px;
+  background-color: var(--bg-shade);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1), -3px -1px 5px rgba(0, 0, 0, 0.1);
+}
+.skill_item:hover {
+  border-bottom: 5px solid var(--primary);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

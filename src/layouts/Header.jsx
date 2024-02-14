@@ -56,6 +56,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <Link className="btn btn-outline-primary">Contact Me</Link>
     </nav>
   );
 };
