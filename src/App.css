@@ -249,3 +249,29 @@ h3 {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+/* about me styler start */
+.about--me {
+  background-color: var(--white);
+}
+.about--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.about_avatar {
+  width: 25rem;
+  margin: 15rem 0 5rem;
+}
+.about--me .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about--me .right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
