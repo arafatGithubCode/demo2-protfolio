@@ -2,7 +2,7 @@ import data from "../data/index.json";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="portfolio">
       <div className="container">
         <div className="project_header">
           <div className="project_header_left">

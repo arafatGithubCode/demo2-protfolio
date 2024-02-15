@@ -17,7 +17,10 @@ const Header = () => {
       <div className="logo">
         <img src="./img/logo.svg" alt="Logo" />
       </div>
-      <div className="nav_hamburger" onClick={toggleNav}>
+      <div
+        className={`nav_hamburger ${navActive ? "active" : ""}`}
+        onClick={toggleNav}
+      >
         <span className="nav_hamburger_line"></span>
         <span className="nav_hamburger_line"></span>
         <span className="nav_hamburger_line"></span>
@@ -40,23 +43,60 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} className="navbar--content">
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={500}
+              to="portfolio"
+              className="navbar--content"
+            >
               Portfolio
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} className="navbar--content">
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={110}
+              duration={100}
+              to="aboutMe"
+              className="navbar--content"
+            >
               About Me
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} className="navbar--content">
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={200}
+              to="testimonial"
+              className="navbar--content"
+            >
               Testimonials
             </Link>
           </li>
         </ul>
       </div>
-      <Link className="btn btn-outline-primary">Contact Me</Link>
+      <Link
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={200}
+        to="contact"
+        className="navbar--content btn btn-outline-primary nav_btn"
+      >
+        Contact Me
+      </Link>
     </nav>
   );
 };
